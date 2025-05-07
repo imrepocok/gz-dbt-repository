@@ -1,4 +1,4 @@
-{{ config(materialized='table', sort='timestamp', dist='user_id') }}
+--{{ config(materialized='table', sort='timestamp', dist='user_id') }}
 
 SELECT
      date_date
