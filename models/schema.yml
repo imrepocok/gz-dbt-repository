@@ -40,40 +40,90 @@ sources:
         description: advords table of Greenweez
         columns:
           - name: date_date
+            tests:
+              - not_null
           - name: paid_source
+            tests:
+              - not_null
           - name: campaign_key
+            tests:
+              - not_null
           - name: ads_cost
+            tests:
+              - not_null
           - name: impression
+            tests:
+              - not_null
           - name: click
+            tests:
+              - not_null
       - name: bing
         identifier: raw_gz_bing
         description: bing table of Greenweez
         columns:
           - name: date_date
+            tests:
+              - not_null
           - name: paid_source
+            tests:
+              - not_null
           - name: campaign_key
+            tests:
+              - not_null
           - name: ads_cost
+            tests:
+              - not_null
           - name: impression
+            tests:
+              - not_null
           - name: click
+            tests:
+              - not_null
+
       - name: criteo
         identifier: raw_gz_criteo
         description: criteo table of Greenweez
         columns:
           - name: date_date
+            tests:
+              - not_null
           - name: paid_source
+            tests:
+              - not_null
           - name: campaign_key
+            tests:
+              - not_null
           - name: ads_cost
+            tests:
+              - not_null
           - name: impression
+            tests:
+              - not_null
           - name: click
+            tests:
+              - not_null
       - name: facebook
         identifier: raw_gz_facebook
         description: facebook table of Greenweez
         columns:
           - name: date_date
+            tests:
+              - not_null
           - name: paid_source
+            tests:
+              - not_null
           - name: campaign_key
+            tests:
+              - not_null
           - name: ads_cost
+            tests:
+              - not_null
           - name: impression
+            tests:
+              - not_null
           - name: click
+            tests:
+              - not_null
+
 
 

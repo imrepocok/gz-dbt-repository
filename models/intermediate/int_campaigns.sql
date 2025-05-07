@@ -13,5 +13,5 @@ from {{ref("stg_raw_criteo")}}
 
 union all
 
-select * 
+select *
 from {{ref("stg_raw_facebook")}}
