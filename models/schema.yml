@@ -12,6 +12,8 @@ sources:
             - unique
             - not_null
         - name: purchSE_PRICE
+          tests:
+            - not_null
       - name: sales
         identifier: raw_gz_sales
         description: sales table of Greenweez
