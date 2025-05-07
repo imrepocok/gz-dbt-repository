@@ -1,17 +1,10 @@
-select * 
-from {{ref("stg_raw_adwords")}}
+{{ dbt_utils.union_relations(
+    relations=[ 
+        ref("stg_raw_adwords"),
+        ref("stg_raw_bing"),
+        ref("stg_raw_criteo"),
+        ref("stg_raw_facebook")
+    ]
+) }}
 
-union all
 
-select * 
-from {{ref("stg_raw_bing")}}
-
-union all
-
-select * 
-from {{ref("stg_raw_criteo")}}
-
-union all
-
-select *
-from {{ref("stg_raw_facebook")}}
