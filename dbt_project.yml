@@ -39,4 +39,7 @@ models:
   my_new_project:
     # Applies to all files under models/example/
     mart:
-      +materialized: table
+      +materialized: 
+      finance:
+        +schema: dbt_tamas_finance
+        
