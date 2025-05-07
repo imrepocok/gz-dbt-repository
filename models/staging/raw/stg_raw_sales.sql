@@ -12,7 +12,7 @@ renamed as (
         date_date,
         orders_id,
         pdt_id as products_id,
-        revenue,
+        cast(revenue as FLOAT64) as revenue,
         quantity
 
     from source
