@@ -10,3 +10,4 @@
   FROM {{ref("stg_raw_sales")}} s
   LEFT JOIN {{ref("product_clean")}} p
       USING (products_id)
+limit 10      
