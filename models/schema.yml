@@ -38,6 +38,8 @@ sources:
       - name: adwords
         identifier: raw_gz_adwords
         description: advords table of Greenweez
+        tests:
+          - stg_adwords_test
         columns:
           - name: date_date
             tests:
